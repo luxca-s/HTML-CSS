@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 10px;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        div#d1 >p { display: none;
+            
+        }
+
+       div#d1:hover {
+            background-color: yellow;
+        }
+
+        div#d1:hover>p {
+            display: inline-block;
+        }
+
+        div#d2:hover {
+            background-color: pink;
+        }
+
+        div#d3:hover {
+            background-color: rgb(20, 186, 53);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" >01 <p>texto escondido</p></div>
+    <div id="d2" >02</div>
+    <div id="d3" >03</div>
+
+</body>
+</html>
